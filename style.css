@@ -1,0 +1,300 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(17, 24, 39); 
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(250, 249, 249);
+  }
+  h1 {
+    margin-top: 100px; /* Prilagodite vrijednost prema željenom pomaku prema dolje */
+  }
+  
+  /* Dodajte medijalni upit koji će primijeniti promjene samo na mobilnoj verziji */
+  @media (min-width: 768px) {
+    h1 {
+      margin-top: 0; /* Resetiraj marginu na 0 u širim prikazima */
+    }
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      margin-top: 120px; /* Promijenite vrijednost prema želji za odmak naslova iznad headbara */
+    }
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(250, 249, 249);
+  }
+
+  h3 {
+    color: rgb(250, 249, 249);
+    font-size: 30px;
+  }
+
+  p {
+    color: rgb(250, 249, 249);
+  }
+
+  p2 {
+    color: rgb(14, 13, 13);
+  }
+
+  #product-list {
+    margin-top: 20px;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  .image-caption {
+    border: 1px solid rgb(179, 26, 158);
+    padding: 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    display: inline-block;
+  }
+
+  .crossed-price {
+    text-decoration: line-through;
+    color: rgb(250, 249, 249);
+  }
+  
+  .real-price {
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+  }
+  @media (max-width: 767px) {
+    .crossed-price {
+      font-size: 44px; /* Postavite željenu veličinu fonta za prekriženu cijenu */
+    }
+  
+    .real-price {
+      font-size: 44px; /* Postavite željenu veličinu fonta za cijenu ispod */
+    }
+  }  
+  
+  .product-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .product-details h2,
+  .product-details p {
+    margin-bottom: 10px;
+  }
+  
+  .product-details img {
+    max-width: 300px;
+  }
+  
+  .crossed-price span {
+    text-decoration: line-through;
+    color: rgb(12, 11, 11);
+  }
+  
+  .real-price span {
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+  }
+
+  .real-price {
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+    font-size: 34px; /* Dodajte ovu liniju i prilagodite vrijednost veličine fonta prema želji */
+  }
+  
+  .crossed-price {
+    text-decoration: line-through;
+    color: rgb(250, 249, 249);
+    font-size: 28px; /* Dodajte ovu liniju i prilagodite vrijednost veličine fonta prema želji */
+  }
+  
+  
+  .customer-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .customer-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .input-box {
+    margin-bottom: 10px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 18px; /* Prilagodite vrijednost prema željenom fontu */
+  }
+  
+  .input-box:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  
+  .start-order-box {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-left: 600px;
+    margin-right: 600px;
+  }
+  
+
+  #customer-details-container {
+    border: 1px solid white;
+    padding: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+   
+    .start-order-box {
+      font-size: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .product-details img {
+      margin-top: -20px; /* Prilagodite vrijednost prema želji */
+    }
+  
+    .price-details {
+      margin-top: 10px; /* Prilagodite vrijednost prema želji */
+    }
+  }
+  
+  .red-text {
+    color: red;
+  }
+  
+  .headbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .discount-text {
+    font-weight: bold;
+  }
+  
+  .timer {
+    font-weight: bold;
+  }
+  
+  .start-order {
+    padding: 8px 16px;
+    background-color: #0026ff; 
+    border-radius: 4px;
+  }
+  
+  .start-order a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .headbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .discount-text {
+    order: 1;
+  }
+  
+  .timer {
+    order: 2;
+  }
+  
+  .start-order {
+    order: 3;
+  }
+
+  @media (max-width: 768px) {
+    .headbar {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .input-box {
+      width: calc(100% - 60px); /* Smanjujemo širinu za 40 piksela (20 piksela s lijeve i desne strane) */
+      margin-left: 25px; /* Dodajemo margin od 20 piksela s lijeve strane */
+      margin-right: 20px; /* Dodajemo margin od 20 piksela s desne strane */
+    }
+  }
+  
+  #popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8c149c;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  #popup-image {
+    margin-top: 20px;
+  }
+  

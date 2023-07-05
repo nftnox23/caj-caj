@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prodaja proizvoda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ZAGARANTOVANO SMANJUJE PRITISAK</h1>
+<div class="image-container">
+  <img src="caj.jpg" alt="Dobrodošlica">
+  <div class="image-caption">
+    <p>Pomaže regulaciju krvnog pritiska.
+        SASTAV:
+        Melissae folium (list matičnjaka) 15%
+        
+        Menthae piperitae folium (list nane) 15%
+        
+        Cichorii radix (korijen cikorije) 10%
+        
+        Crategi flos (cvijet gloga) 10%
+        
+        Equiseti herba (preslica) 10%
+        
+        Stigmata maydis (kukuruzna svila) 10%
+        
+        Olivae folium (list masline) 10%
+        
+        Visci alba herba (imela) 10%
+        
+        Graminis rhizoma (podanak pirevine) 5%
+        
+        Rubi fruticosi folium (list kupine) 5%
+        
+        DJELOVANJE:
+        Glog sadrži aktivne tvari koje šire krvne žile, imela pospješuje cirkulaciju, maslina snižava krvni pritisak, a kukuruzna svila, kupina i preslica pospješuju izmokravanje. Pirevina pomaže kod upala mokraćnih puteva. Eterična ulja nane i matičnjaka djeluju umirujuće. 
+        
+        NAČIN UPOTREBE:
+        Čajnu kašiku čaja preliti sa dva decilitra ključale vode i pustiti da kuha pola minute. Nakon toga, ostaviti 5 do 10 minuta u poklopljenoj posudi, uz povremeno miješanje, te procijediti. Po jednu šolju, ovako pripremljenog čaja, piti 2-3 puta dnevno. Uvijek pripremati svjež čajni napitak.
+        
+        NAČIN ČUVANJA:
+        Čuvati u zatvorenoj ambalaži, na suhom mjestu, zaštićeno od svjetlosti i na temperaturi do 25°C.
+        
+        PAKOVANJE:
+        50 g čajne mješavine</p>
+  </div>
+    <div class="image-caption">
+        <div class="image-container">
+            <img src="doktor.jpg" alt="Dobrodošlica">
+            <p><span class="red-text">TESTIRAN I ODOBREN OD STRANE STRUČNOG TIMA</span>
+            <p>Pomaže regulaciju krvnog pritiska.
+          SASTAV:
+          Melissae folium (list matičnjaka) 15%
+          
+          Menthae piperitae folium (list nane) 15%
+          
+          Cichorii radix (korijen cikorije) 10%
+          
+          Crategi flos (cvijet gloga) 10%
+          
+          Equiseti herba (preslica) 10%
+          
+          Stigmata maydis (kukuruzna svila) 10%
+          
+          Olivae folium (list masline) 10%
+          
+          Visci alba herba (imela) 10%
+          
+          Graminis rhizoma (podanak pirevine) 5%
+          
+          Rubi fruticosi folium (list kupine) 5%
+          
+          DJELOVANJE:
+          Glog sadrži aktivne tvari koje šire krvne žile, imela pospješuje cirkulaciju, maslina snižava krvni pritisak, a kukuruzna svila, kupina i preslica pospješuju izmokravanje. Pirevina pomaže kod upala mokraćnih puteva. Eterična ulja nane i matičnjaka djeluju umirujuće. 
+          
+          NAČIN UPOTREBE:
+          Čajnu kašiku čaja preliti sa dva decilitra ključale vode i pustiti da kuha pola minute. Nakon toga, ostaviti 5 do 10 minuta u poklopljenoj posudi, uz povremeno miješanje, te procijediti. Po jednu šolju, ovako pripremljenog čaja, piti 2-3 puta dnevno. Uvijek pripremati svjež čajni napitak.
+          
+          NAČIN ČUVANJA:
+          Čuvati u zatvorenoj ambalaži, na suhom mjestu, zaštićeno od svjetlosti i na temperaturi do 25°C.
+          
+          PAKOVANJE:
+          50 g čajne mješavine</p>
+    </div>
+</div>
+
+
+    <div id="product-list">
+        <!-- Ovdje cemo prikazati proizvode -->
+    </div>
+
+    <div class="headbar">
+        <div class="discount-text">Akcija od 50% vazi jos:</div>
+        <div class="timer">05:00</div>
+        <div class="start-order">
+          <a href="#customer-details-container">Započni narudžbu</a>
+        </div>
+      </div>
+      
+      <div id="customer-details-container">
+        <h2>Narucite jos danas</h2>
+        <div class="product-details">
+          <h3>Galas caj</h3>
+          <img src="caj.jpg" alt="Proizvod" />
+          <div class="price-details">
+            <div class="crossed-price">100 KM</div>
+            <div class="real-price">50 KM</div>
+          </div>
+        </div>
+        <div class="input-box">
+          <input type="text" id="name" placeholder="Unesite ime">
+        </div>
+        <div class="input-box">
+          <input type="text" id="phone" placeholder="Unesite broj telefona"pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+        </div>
+        <div class="input-box">
+          <input type="text" id="address" placeholder="Unesite adresu">
+        </div>
+        <div class="start-order-box">
+          <p2 onclick="if(validateForm()) { showPopup(); }">NARUČI</p2>
+        </div>        
+      </div>
+      <script>
+        function validateForm() {
+          var nameInput = document.getElementById('name');
+          var phoneInput = document.getElementById('phone');
+          var addressInput = document.getElementById('address');
+        
+          if (nameInput.value === '' || phoneInput.value === '' || addressInput.value === '') {
+            alert('Molimo popunite sva polja.');
+            return;
+          }
+        
+          // Slanje podataka na mail ili drugu destinaciju
+          var data = {
+            name: nameInput.value,
+            phone: phoneInput.value,
+            address: addressInput.value
+          };
+        
+          // Ovdje možete dodati kod za slanje podataka na mail ili drugu destinaciju
+        
+          alert('Vaša narudžba je uspješno poslana.');
+        }
+
+        var startOrderBox = document.querySelector('.start-order-box');
+        startOrderBox.addEventListener('click', function() {
+          validateForm();
+        });
+      </script>
+        
+        <div id="popup">
+          <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h3>Vaša narudžba je uspješno poslana!</h3>
+            <p>Hvala Vam na narudžbi.</p>
+            <div id="popup-image"></div>
+          </div>
+        </div>
+        
+
+      <footer>
+        <p>&copy; 2023 Copyright. Sva prava zadržana.</p>
+      </footer>
+      
+      
+    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</body>
+</html>
