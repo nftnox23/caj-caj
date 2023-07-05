@@ -170,6 +170,7 @@ body {
   #customer-details-container {
     border: 1px solid white;
     padding: 20px;
+    margin-bottom: 20px;
   }
   
   @media (max-width: 767px) {
@@ -294,7 +295,20 @@ body {
     color: #fff;
   }
   
+  
   #popup-image {
     margin-top: 20px;
   }
+  
+  footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1000;
+    background-color: #4e4e4e;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
   
